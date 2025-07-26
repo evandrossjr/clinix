@@ -64,4 +64,5 @@ public class Doctor extends User{
     public void setWorkingDays(Set<DayOfWeekBR> workingDays) {
         this.workingDays = workingDays;
     }
+
 }
