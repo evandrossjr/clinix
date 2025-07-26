@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
 
-    List<Doctor> findWorkingDaysContaining(DayOfWeekBR day);
+    List<Doctor> findByWorkingDaysContaining(DayOfWeekBR day);
 
     @Query("SELECT DISTINCT d.specialty FROM Doctor d")
     List<String> findSpecialty();

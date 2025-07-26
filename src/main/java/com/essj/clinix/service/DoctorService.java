@@ -1,4 +1,4 @@
-package com.essj.clinix.Service;
+package com.essj.clinix.service;
 
 
 import com.essj.clinix.repositories.DoctorRepository;

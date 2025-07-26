@@ -3,21 +3,18 @@ package com.essj.clinix.models;
 import com.essj.clinix.models.enums.DayOfWeekBR;
 import com.essj.clinix.models.enums.Role;
 import com.essj.clinix.models.enums.Specialty;
-import jakarta.persistence.ElementCollection;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.FetchType;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 import java.util.Set;
 
+@Entity
 public class Doctor extends User{
 
     @NotNull
     private int crm;
 
-    @NotBlank
     @Enumerated(EnumType.STRING)
     private Specialty specialty;
 

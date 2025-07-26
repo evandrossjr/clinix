@@ -17,7 +17,7 @@ public record DoctorDTO(Long id,
                         @Email String email,
                         @NotNull String telefone,
                         @NotNull int crm,
-                        @NotNull Specialty specialty,
+                        Specialty specialty,
                         Set<DayOfWeekBR> workingDays) {
 
 }
