@@ -1,4 +1,4 @@
-package com.essj.clinix;
+package com.essj.clinix.repositories;
 
 import com.essj.clinix.models.Doctor;
 import com.essj.clinix.models.enums.DayOfWeekBR;
